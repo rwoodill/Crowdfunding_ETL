@@ -29,7 +29,7 @@ CREATE TABLE "CONTACTS" (
 );
 
 CREATE TABLE "CAMPAIGN" (
-    "campaign_id" SERIAL   NOT NULL,
+    "cf_id" INT   NOT NULL,
     "contact_id" INT   NOT NULL,
     "company_name" VARCHAR   NOT NULL,
     "description" VARCHAR   NOT NULL,
@@ -44,7 +44,7 @@ CREATE TABLE "CAMPAIGN" (
     "category_id" VARCHAR   NOT NULL,
     "subcategory_id" VARCHAR   NOT NULL,
     CONSTRAINT "pk_CAMPAIGN" PRIMARY KEY (
-        "campaign_id"
+        "cf_id"
      )
 );
 
